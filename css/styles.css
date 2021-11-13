@@ -162,6 +162,10 @@ body {
 }
 
 /* ============================= Service Section ==========================*/
+.service-section{
+  padding-bottom: 79px;
+}
+
 .service-header{
   padding-top: 52px;
   max-width: 40%;
@@ -212,4 +216,57 @@ body {
 
 .service-desc{
   text-align: center;
+}
+
+/* ============================= Service Section ==========================*/
+.project-section{
+  background-color: var(--blue-light);
+  padding-bottom: 102px;
+}
+
+.project-header{
+  max-width: 50%;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 73px;
+  color: var(--primary);
+  padding-top: 66px;
+}
+
+.project-slider{
+  margin-top: 35px;
+}
+
+.project-img{
+  position: relative;
+  z-index: 1;
+}
+
+.project-text{
+  position: relative;
+  z-index: 2;
+  margin-top: -88px;
+  color: #fff;
+  margin-left: 26px;
+}
+
+.project-text h1{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.project-text p{
+  margin-top: -12px;
+}
+
+.project-slider .owl-nav{
+  position: relative;
+  float: right;
+  margin-top: -600px;
+  margin-right: 100px;
+}
+
+.project-slider .slider-nav-left{
+  margin-right: 36px;
 }
