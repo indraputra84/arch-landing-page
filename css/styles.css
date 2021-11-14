@@ -6,6 +6,7 @@
   --blue-light: #f0f3ff;
   --light: #ffff;
   --dark: #1e3240;
+  --main-bg:#C3CBEA;
   --poppins: "Archivo", sans-serif;
   --archivo: "Poppins", sans-serif;
   --B612: 'B612', sans-serif;
@@ -33,7 +34,7 @@ body {
 /* ============================= Header ==========================*/
 .header-section {
   height: 100vh;
-  background-color: #c3cbea;
+  background-color: var(--main-bg);
   background-image: url("../img/header.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -166,12 +167,14 @@ body {
   padding-bottom: 79px;
 }
 
-.service-header{
+.service-header,
+.testimony-header{
   padding-top: 52px;
   max-width: 40%;
 }
 
-.service-header h1{
+.service-header h1,
+.testimony-header h1{
   font-weight: 600;
   font-size: 48px;
   line-height: 73px;
@@ -269,4 +272,148 @@ body {
 
 .project-slider .slider-nav-left{
   margin-right: 36px;
+}
+
+/* ============================= Testimony Section ==========================*/
+
+.testimony-section .testimony-item{
+  width:80% ;
+  float: right;
+}
+
+.coma-img img{
+  max-width: 200px;
+}
+
+.testimony-text h1{
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 55px;
+}
+
+.testimony-item p{
+  font-size: 24px;
+  font-family: var(--archivo);
+  font-style: italic;
+  line-height: 36px;
+}
+
+.testimony-text .author{
+  font-weight: 700;
+  color: var(--primary) !important;
+}
+
+.testimony-section .owl-nav{
+  float: right;
+  position: relative;
+  margin-top: -54px;
+  margin-right: 88px;
+}
+
+.testimony-section .slider-nav-left{
+  margin-right: 11px;
+}
+
+.coma-img{
+  position: relative;
+  z-index: 1;
+  top: 26px;
+  left: -52px;
+}
+
+.testimony-text{
+  position: relative;
+  z-index: 2;
+  margin-top: -90px;
+  padding: 60px 84px;
+}
+
+/* ============================= Contact Section ==========================*/
+.contact-section{
+  background-color: var(--main-bg);
+  padding-bottom: 48px;
+}
+
+.contact-root{
+  display: flex;
+}
+
+.contact-area{
+  width: 50%;
+  padding-left: 160px;
+  padding-right: 112px;
+}
+
+.contact-image{
+  width: 50%;
+}
+
+.contact-header{
+  margin-top: 46px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  color: var(--primary);
+}
+
+.contact-form{
+  margin-top: 65px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form textarea {
+  padding: 12px 12px;
+  box-sizing: border-box;
+  border: 2px solid var(--dark);
+  background-color: transparent;
+}
+
+.contact-form ::placeholder{
+  font-family: var(--archivo);
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(30, 50, 64, 0.50);
+}
+
+.contact-image .image{
+  width: 100%;
+  height: 100%;
+}
+
+/* ============================= Footer Section ==========================*/
+.footer-wraper{
+  margin: 21px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo{
+  width: 48px;
+  height: 48px;
+}
+
+.list{
+  position: relative;
+  top: 10px;
+}
+
+.list ul li {
+  font-weight: 400;
+  color: var(--dark);
+  font-family: var(--archivo);
+  display:inline;
+  margin-right: 48px;
+  font-size: 16px;
+}
+
+.list .last{
+  margin-right: 0px;
 }
