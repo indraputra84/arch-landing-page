@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
   --primary: #424d79;
   --blue-light: #f0f3ff;
   --light: #ffff;
   --dark: #1e3240;
-  --main-bg:#C3CBEA;
+  --main-bg: #c3cbea;
   --poppins: "Archivo", sans-serif;
   --archivo: "Poppins", sans-serif;
-  --B612: 'B612', sans-serif;
+  --B612: "B612", sans-serif;
 }
 
 body {
@@ -31,6 +31,10 @@ body {
   color: var(--light);
 }
 
+.bg-custom-primary {
+  background: var(--blue-light);
+}
+
 /* ============================= Header ==========================*/
 .header-section {
   height: 100vh;
@@ -42,6 +46,14 @@ body {
 }
 
 /* ============================= Navbar ==========================*/
+.nav-stick{
+  padding-bottom: 8px; 
+}
+
+.nav-stick .navbar-item{
+  margin-top: 8px;
+}
+
 .navbar-logo {
   width: 48px;
   height: 48px;
@@ -94,7 +106,7 @@ body {
   padding: 4rem;
 }
 
-.about-section .text-area{
+.about-section .text-area {
   padding-top: 112px;
 }
 
@@ -115,19 +127,19 @@ body {
   color: var(--dark);
 }
 
-.ceo-desc{
+.ceo-desc {
   margin-top: 20px;
   /* margin-left: 94px; */
 }
 
-.ceo-name{
+.ceo-name {
   font-weight: 600;
   font-size: 24px;
   color: var(--primary);
   line-height: 28px;
 }
 
-.ceo-position{
+.ceo-position {
   margin-top: -12px;
   font-family: var(--archivo);
   font-weight: 400;
@@ -135,7 +147,7 @@ body {
   color: var(--dark);
 }
 
-.text-area .coma{
+.text-area .coma {
   position: absolute;
   font-size: 288px;
   font-weight: 700;
@@ -146,64 +158,64 @@ body {
   left: -40px;
 }
 
-.text-experience{
+.text-experience {
   color: var(--dark);
   font-family: var(--archivo);
   text-align: center;
   margin-top: 84px;
 }
 
-.text-experience h2{
+.text-experience h2 {
   font-size: 24px;
 }
 
-.text-experience p{
+.text-experience p {
   font-size: 48px;
   font-weight: 600;
 }
 
 /* ============================= Service Section ==========================*/
-.service-section{
+.service-section {
   padding-bottom: 79px;
 }
 
 .service-header,
-.testimony-header{
+.testimony-header {
   padding-top: 52px;
   max-width: 40%;
 }
 
 .service-header h1,
-.testimony-header h1{
+.testimony-header h1 {
   font-weight: 600;
   font-size: 48px;
   line-height: 73px;
   color: var(--primary);
 }
 
-.service-root{
+.service-root {
   margin-top: 40px;
 }
 
-.service-icon-root{
+.service-icon-root {
   display: flex;
   justify-content: center;
 }
 
-.service-title{
+.service-title {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
   color: var(--primary);
 }
 
-.service-desc{
+.service-desc {
   font-family: var(--archivo);
   color: var(--dark);
   margin-top: 24px;
 }
 
-.btn-service{
+.btn-service {
   margin-top: 36px;
   background-color: var(--primary);
   color: var(--light);
@@ -212,22 +224,22 @@ body {
   font-size: 16px;
 }
 
-.btn-center{
+.btn-center {
   display: flex;
   justify-content: center;
 }
 
-.service-desc{
+.service-desc {
   text-align: center;
 }
 
 /* ============================= Service Section ==========================*/
-.project-section{
+.project-section {
   background-color: var(--blue-light);
   padding-bottom: 102px;
 }
 
-.project-header{
+.project-header {
   max-width: 50%;
   font-size: 48px;
   font-weight: 600;
@@ -236,16 +248,16 @@ body {
   padding-top: 66px;
 }
 
-.project-slider{
+.project-slider {
   margin-top: 35px;
 }
 
-.project-img{
+.project-img {
   position: relative;
   z-index: 1;
 }
 
-.project-text{
+.project-text {
   position: relative;
   z-index: 2;
   margin-top: -88px;
@@ -253,76 +265,76 @@ body {
   margin-left: 26px;
 }
 
-.project-text h1{
+.project-text h1 {
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
 }
 
-.project-text p{
+.project-text p {
   margin-top: -12px;
 }
 
-.project-slider .owl-nav{
+.project-slider .owl-nav {
   position: relative;
   float: right;
   margin-top: -600px;
   margin-right: 100px;
 }
 
-.project-slider .slider-nav-left{
+.project-slider .slider-nav-left {
   margin-right: 36px;
 }
 
 /* ============================= Testimony Section ==========================*/
 
-.testimony-section .testimony-item{
-  width:80% ;
+.testimony-section .testimony-item {
+  width: 80%;
   float: right;
 }
 
-.coma-img img{
+.coma-img img {
   max-width: 200px;
 }
 
-.testimony-text h1{
+.testimony-text h1 {
   color: var(--primary);
   font-weight: 700;
   font-size: 36px;
   line-height: 55px;
 }
 
-.testimony-item p{
+.testimony-item p {
   font-size: 24px;
   font-family: var(--archivo);
   font-style: italic;
   line-height: 36px;
 }
 
-.testimony-text .author{
+.testimony-text .author {
   font-weight: 700;
   color: var(--primary) !important;
 }
 
-.testimony-section .owl-nav{
+.testimony-section .owl-nav {
   float: right;
   position: relative;
   margin-top: -54px;
   margin-right: 88px;
 }
 
-.testimony-section .slider-nav-left{
+.testimony-section .slider-nav-left {
   margin-right: 11px;
 }
 
-.coma-img{
+.coma-img {
   position: relative;
   z-index: 1;
   top: 26px;
   left: -52px;
 }
 
-.testimony-text{
+.testimony-text {
   position: relative;
   z-index: 2;
   margin-top: -90px;
@@ -330,26 +342,26 @@ body {
 }
 
 /* ============================= Contact Section ==========================*/
-.contact-section{
+.contact-section {
   background-color: var(--main-bg);
   padding-bottom: 48px;
 }
 
-.contact-root{
+.contact-root {
   display: flex;
 }
 
-.contact-area{
+.contact-area {
   width: 50%;
   padding-left: 160px;
   padding-right: 112px;
 }
 
-.contact-image{
+.contact-image {
   width: 50%;
 }
 
-.contact-header{
+.contact-header {
   margin-top: 46px;
   font-weight: 600;
   font-size: 48px;
@@ -357,18 +369,18 @@ body {
   color: var(--primary);
 }
 
-.contact-form{
+.contact-form {
   margin-top: 65px;
 }
 
 .contact-form input,
-.contact-form textarea{
+.contact-form textarea {
   width: 100%;
   margin-bottom: 24px;
 }
 
-.contact-form input[type=text],
-.contact-form input[type=email],
+.contact-form input[type="text"],
+.contact-form input[type="email"],
 .contact-form textarea {
   padding: 12px 12px;
   box-sizing: border-box;
@@ -376,31 +388,31 @@ body {
   background-color: transparent;
 }
 
-.contact-form ::placeholder{
+.contact-form ::placeholder {
   font-family: var(--archivo);
   font-weight: 400;
   font-size: 16px;
-  color: rgba(30, 50, 64, 0.50);
+  color: rgba(30, 50, 64, 0.5);
 }
 
-.contact-image .image{
+.contact-image .image {
   width: 100%;
   height: 100%;
 }
 
 /* ============================= Footer Section ==========================*/
-.footer-wraper{
+.footer-wraper {
   margin: 21px 0;
   display: flex;
   justify-content: space-between;
 }
 
-.footer-logo{
+.footer-logo {
   width: 48px;
   height: 48px;
 }
 
-.list{
+.list {
   position: relative;
   top: 10px;
 }
@@ -409,11 +421,79 @@ body {
   font-weight: 400;
   color: var(--dark);
   font-family: var(--archivo);
-  display:inline;
+  display: inline;
   margin-right: 48px;
   font-size: 16px;
 }
 
-.list .last{
+.list .last {
   margin-right: 0px;
+}
+
+.credit .fa-heart {
+  color: #eb084c !important;
+}
+
+.credit {
+  color: rgb(185, 184, 184);
+  font-weight: 600;
+}
+
+/* ============================= Mobile Section ==========================*/
+@media only screen and (max-width: 720px) {
+  .header-section {
+    background-position: 3px 421px;
+    height: 92vh;
+  }
+
+  .hero-section .hero-text h1 {
+    font-size: 43px;
+    line-height: 22px;
+  }
+
+  .about-section {
+    padding: 1rem;
+  }
+
+  .text-area .coma {
+    left: -10px;
+  }
+
+  .about-title {
+    line-height: 48px;
+    font-size: 38px;
+    margin-top: 22px;
+  }
+
+  .about-description {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .service-header,
+  .project-header {
+    max-width: 100%;
+  }
+
+  .service-header h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .btn-service {
+    margin-bottom: 38px;
+  }
+
+  .service-section {
+    padding: 38px 1rem;
+  }
+
+  .project-header {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .project-slider .owl-nav {
+    margin-top: 24px;
+  }
 }
