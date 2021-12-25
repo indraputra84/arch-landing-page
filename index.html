@@ -35,16 +35,16 @@
                         <form class="form-inline my-2 my-lg-0">
                             <ul class="navbar-nav navbar-item">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Home</a>
+                                    <a class="nav-link" href="#home">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
+                                    <a class="nav-link" href="#about">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Projects</a>
+                                    <a class="nav-link" href="#project">Projects</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="btn btn-custom-primary">
+                                    <a href="#contact" class="btn btn-custom-primary">
                                         Contact
                                     </a>
                                 </li>
@@ -55,7 +55,7 @@
             </nav>
         </section>
         
-        <section class="hero-section container">
+        <section class="hero-section container" id="home">
             <div class="hero-text">
                 <h1>A dream house</h1>
                 <br>
@@ -65,19 +65,23 @@
             </div>
 
             <div class="button-navigation">
-                <button class="btn btn-custom-primary">
-                    Learn More
-                </button>
-                <button class="btn btn-transparent cl-primary pl-4">
-                    Portofolio
-                </button>
+                <a href="#about">
+                    <button class="btn btn-custom-primary">
+                        Learn More
+                    </button>
+                </a>
+                <a href="#project">
+                    <button class="btn btn-transparent cl-primary pl-4">
+                        Portofolio
+                    </button>
+                </a>
                 <img class="arrow" src="img/Arrow_01.svg" alt="">
             </div>
         </section>
     </section>
 
     <!-- About Section -->
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -165,7 +169,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="project-section">
+    <section class="project-section" id="project">
         <div class="container">
             <div class="project-header">
                 We’re not only design building, but also crafting a masterpiece
@@ -256,7 +260,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
         <div class="contact-root">
             <div class="contact-area">
                 <div class="contact-header">

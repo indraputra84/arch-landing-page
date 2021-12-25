@@ -11,6 +11,9 @@
   --archivo: "Poppins", sans-serif;
   --B612: "B612", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   padding: 0;
@@ -495,5 +498,74 @@ body {
 
   .project-slider .owl-nav {
     margin-top: 24px;
+  }
+
+  .service-header h1, .testimony-header h1{
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .testimony-header{
+    max-width: 100%;
+  }
+
+  .testimony-text{
+    padding: 0 0;
+  }
+
+  .testimony-section .testimony-item {
+    width: 100%;
+  }
+
+  .testimony-text h1{
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .coma-img{
+    left: 0;
+    top: -58px;
+  }
+
+  .coma-img img{
+    width: 24% !important;
+  }
+
+  .testimony-item{
+    padding-top: 72px;
+  }
+
+  .testimony-item p{
+    font-size: 20px;
+  }
+
+  .testimony-section .owl-nav {
+    margin-top: -44px;
+    margin-right: 0;
+  }
+
+  .testimony-slider{
+    padding-bottom: 18px;
+  }
+
+  .contact-root{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .contact-header{
+    padding-top: 24px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .contact-area{
+    padding: 0 12px;
+    width: 100%;
+  }
+
+  .contact-image{
+    display: block;
+    width: 100%;
   }
 }
